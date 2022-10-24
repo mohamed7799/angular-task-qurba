@@ -1,0 +1,33 @@
+.log-in-form {
+  & h2 {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  & h4 {
+    color: #667085;
+    padding: 1rem;
+  }
+
+  & label {
+    display: block;
+    padding: 0.5rem 0rem;
+  }
+
+  & input {
+    width: 100%;
+  }
+
+  & button {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    background-color: #56d9d9;
+    color: #344054;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+}
