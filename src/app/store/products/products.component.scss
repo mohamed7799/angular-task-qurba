@@ -1,0 +1,23 @@
+.container__products {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0rem;
+}
+
+.pagination span {
+  color: black;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: 1px solid #ddd;
+}
+
+.pagination span.active {
+  background-color: rgba(86, 217, 217, 1);
+  border: 1px solid rgba(86, 217, 217, 1);
+}

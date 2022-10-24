@@ -1,0 +1,23 @@
+.product {
+  border: 1px solid gray;
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: rgba(52, 64, 84, 1);
+  & img {
+    width: 100%;
+  }
+
+  & span {
+    font-weight: bold;
+  }
+}
+
+.discount__product {
+  text-decoration: line-through;
+  opacity: 0.8;
+  margin-right: 0.5rem;
+}
+
+.rate__product {
+  color: rgba(244, 176, 0, 1);
+}
