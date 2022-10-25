@@ -1,15 +1,27 @@
 <div class="product">
-  <img src="../../../assets/product_image.svg" alt="" />
-  <h3>iPhone 9</h3>
-  <p>An Apple mobile which is nothing like apple.</p>
-  <p><span class="discount__product">549 USD </span> <span>477 USD</span></p>
+  <img src="{{ product.thumbnail }}" alt="" />
+  <h3>{{ product.title }}</h3>
+  <p>{{ product.description }}</p>
+  <p>
+    <span class="discount__product">{{ product.price }} USD </span>
+    <span>477 USD</span>
+  </p>
   <ul>
-    <li>Brand: <span>Apple</span></li>
-    <li>Category: <span>Smartphones</span></li>
-    <li>In stock: <span>94</span></li>
+    <li>
+      Brand: <span>{{ product.brand }}</span>
+    </li>
+    <li>
+      Category: <span>{{ product.category }}</span>
+    </li>
+    <li>
+      In stock: <span>{{ product.stock }}</span>
+    </li>
   </ul>
   <p style="text-align: right">
-    <span style="color: rgba(244, 176, 0, 1)">4.92 </span> <span>(11)</span>
+    <span style="color: rgba(244, 176, 0, 1)"
+      >&#9733; {{ product.rating }}
+    </span>
+    <span>(11)</span>
   </p>
   <button>ADD TO CART</button>
 </div>

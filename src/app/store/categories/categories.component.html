@@ -1,45 +1,9 @@
 <div class="categories">
   <h3>Products</h3>
-  <ul>
+  <ul *ngFor="let category of categories">
     <li>
       <input type="checkbox" name="item" id="" />
-      <label for="item">item(5)</label>
-    </li>
-    <li>
-      <input type="checkbox" name="item" id="" />
-      <label for="item">item(5)</label>
-    </li>
-    <li>
-      <input type="checkbox" name="item" id="" />
-      <label for="item">item(5)</label>
-    </li>
-    <li>
-      <input type="checkbox" name="item" id="" />
-      <label for="item">item(5)</label>
-    </li>
-    <li>
-      <input type="checkbox" name="item" id="" />
-      <label for="item">item(5)</label>
-    </li>
-    <li>
-      <input type="checkbox" name="item" id="" />
-      <label for="item">item(5)</label>
-    </li>
-    <li>
-      <input type="checkbox" name="item" id="" />
-      <label for="item">item(5)</label>
-    </li>
-    <li>
-      <input type="checkbox" name="item" id="" />
-      <label for="item">item(5)</label>
-    </li>
-    <li>
-      <input type="checkbox" name="item" id="" />
-      <label for="item">item(5)</label>
-    </li>
-    <li>
-      <input type="checkbox" name="item" id="" />
-      <label for="item">item(5)</label>
+      <label for="item">{{ category.name }} ({{ category.total }})</label>
     </li>
   </ul>
 </div>

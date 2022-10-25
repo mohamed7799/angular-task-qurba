@@ -1,18 +1,15 @@
 <div class="products">
-  <div class="container__products">
-    <app-product></app-product>
-    <app-product></app-product>
-    <app-product></app-product>
-    <app-product></app-product>
-    <app-product></app-product>
-    <app-product></app-product>
-    <app-product></app-product>
-    <app-product></app-product>
+  <div class="container__products" *ngIf="products.length">
+    <ng-container *ngFor="let productItem of products">
+      <app-product [product]="productItem"></app-product>
+    </ng-container>
   </div>
-  <div class="pagination">
-    <span href="#">&laquo;</span>
-    <span class="active">1</span><span>2</span><span>3</span><span>4</span
-    ><span>5</span>
-    <span href="#">&raquo;</span>
+  <div class="pagination" *ngIf="pages.length">
+    <span (click)="prevPage()" href="#">&laquo;</span>
+    <ng-container *ngFor="let page of pages">
+      <span [ngClass]="{ active: page === currentPage }"> {{ page }}</span>
+    </ng-container>
+
+    <span (click)="nextPage()" href="#">&raquo;</span>
   </div>
 </div>
