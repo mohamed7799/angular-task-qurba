@@ -18,7 +18,9 @@ button {
   font-family: "Inter", sans-serif;
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="email"],
+input[type="password"] {
   padding: 0.5rem;
   width: 250px;
   border: 1px solid #e3e3e3;
@@ -43,4 +45,16 @@ button {
   font-weight: bold;
   font-size: 1rem;
   cursor: pointer;
+}
+
+.log-in {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.store {
+  padding: 1rem;
+  flex: 1;
 }

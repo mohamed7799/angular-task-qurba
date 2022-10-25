@@ -2,11 +2,16 @@
   <img src="../../assets/Logo.svg" alt="" />
   <h3 class="home__navbar">Home</h3>
 
+  <ng-container *ngIf="loggedIn()">
+    <input class="search__navbar" placeholder="Search" type="text" />
+    <h3>Cart (3)</h3>
+    <h3>Account</h3>
+  </ng-container>
+
   <!--
-<h3>Log in</h3>
+
+
 
   -->
-  <input class="search__navbar" placeholder="Search" type="text" />
-  <h3>Cart (3)</h3>
-  <h3>Account</h3>
+  <h3 *ngIf="!loggedIn()">Log in</h3>
 </nav>

@@ -10,6 +10,7 @@ import { StoreComponent } from './store/store.component';
 import { CategoriesComponent } from './store/categories/categories.component';
 import { ProductsComponent } from './store/products/products.component';
 import { ProductComponent } from './store/product/product.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,13 +21,10 @@ import { ProductComponent } from './store/product/product.component';
     StoreComponent,
     CategoriesComponent,
     ProductsComponent,
-    ProductComponent
+    ProductComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

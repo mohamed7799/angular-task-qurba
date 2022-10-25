@@ -1,15 +1,19 @@
 import { Component, OnInit } from '@angular/core';
+import { LogIngService } from '../log-in/log-in.service';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss']
+  styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent implements OnInit {
+  constructor(private logIn: LogIngService) {}
 
-  constructor() { }
+  //functions
 
-  ngOnInit(): void {
+  loggedIn() {
+    return this.logIn.isLoggedIn;
   }
 
+  ngOnInit(): void {}
 }
