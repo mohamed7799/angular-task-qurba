@@ -1,10 +1,12 @@
 .product {
+  position: relative;
   border: 1px solid gray;
   padding: 0.5rem;
   border-radius: 5px;
   color: rgba(52, 64, 84, 1);
   & img {
     width: 100%;
+    margin-bottom: 1rem;
   }
 
   & span {
@@ -20,4 +22,14 @@
 
 .rate__product {
   color: rgba(244, 176, 0, 1);
+}
+
+.discount-tag {
+  position: absolute;
+  background-color: #56d9d9;
+  border-radius: 5px;
+  padding: 0.5rem;
+  top: 20px;
+  left: 20px;
+  font-size: 0.8rem;
 }
