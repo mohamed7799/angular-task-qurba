@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 import category from '../interfaces/category';
 
 @Injectable({
@@ -8,6 +9,7 @@ export class StoreService {
   constructor() {}
 
   //state
+  cart: BehaviorSubject<number> = new BehaviorSubject<number>(0);
 
   numberOfPages: number = 0;
 
@@ -33,5 +35,10 @@ export class StoreService {
       categories.push({ name: categoriesNames[index], total: size.total });
     }
     return categories;
+  }
+
+  addToCart() {
+    alert('item added to the cart');
+    this.cart.next(this.cart.getValue() + 1);
   }
 }
